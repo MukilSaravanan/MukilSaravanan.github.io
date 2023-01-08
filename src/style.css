@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
 
 
 body {
@@ -31,9 +31,10 @@ body {
     justify-content: center;
     flex-direction: column;
     color: white;
-    font-family: futura-pt;
-    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    /* font-family: futura-pt, sans-serif; */
+    font-family: 'PT Sans Caption', sans-serif;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 
@@ -45,7 +46,7 @@ body {
 }
 
 .homepage-nav-li {
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 800;
     margin: 1em 0px;
 }
@@ -64,12 +65,12 @@ body {
 .portfolio-name {
     font-weight: 800;
     margin: 0px;
-    font-size: 5em;
-    height: 1em;
+    font-size: 3em;
+    height: 1.2em;
 }
 
 .portfolio-tag {
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: end;
     font-weight: 300;
     margin: 0px;

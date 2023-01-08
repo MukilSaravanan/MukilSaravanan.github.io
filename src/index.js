@@ -1,15 +1,18 @@
-let imageIndex = 2
-let numberOfBackgroundImage = 4;
-function backgroundChange() {
-    let backgroundImage = document.querySelector(".home-page-background")
-    console.log(backgroundImage)
-    if (backgroundImage) {
-        backgroundImage.setAttribute("src", `./assets/background-image-${imageIndex}.jpg`)
-    }
-    imageIndex = imageIndex >= numberOfBackgroundImage ? 1 : imageIndex + 1;
-    console.log('1234')
+let imageIndex = 0
+
+// console.log(12)
+function backgroundChange(){
+    let backgroundImage = document.querySelectorAll(".home-page-background")
+    backgroundImage[imageIndex].classList.remove("visible-image")
+    backgroundImage[imageIndex].classList.add("hide-image")
+    imageIndex = imageIndex >= backgroundImage.length - 1? 0 : imageIndex + 1;
+    console.log(imageIndex)
+    backgroundImage[imageIndex].classList.remove("hide-image")
+    backgroundImage[imageIndex].classList.add("visible-image")
 }
 
 window.onload = function () {
-    setInterval(backgroundChange, 4000);
+    setInterval(()=>{
+        backgroundChange()
+    }, 5000);
 };

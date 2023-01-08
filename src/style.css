@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@100&display=swap');
 
 
-body{
+body {
     margin: 0px;
 }
 
 
-.homepage{
+.homepage {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -14,17 +14,18 @@ body{
     justify-content: center;
 }
 
-.home-page-background{
-    width:100%;
-    height:100%;
+.home-page-background {
+    width: 100%;
+    height: 100%;
     position: fixed;
     top: 0px;
     object-fit: cover;
     object-position: 50% 50%;
-    z-index:-1;
+    z-index: -1;
+    transition : opacity 1s ease-in;
 }
 
-.home-page-center{
+.home-page-center {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,32 +37,38 @@ body{
 }
 
 
-.homepage-nav-ul{
+.homepage-nav-ul {
     list-style: none;
     margin: 0px;
     padding: 0px;
     text-align: center;
 }
 
-.homepage-nav-li{
+.homepage-nav-li {
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 800;
     margin: 1em 0px;
 }
 
-.home-page-li-anchor{
-    color:inherit;
+.home-page-li-anchor {
+    color: inherit;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.portfolio-name{
+.home-page-li-anchor:hover {
+    color: rgba(255,255,255,.6);
+}
+
+
+.portfolio-name {
     font-weight: 800;
     margin: 0px;
     font-size: 5em;
     height: 1em;
 }
 
-.portfolio-tag{
+.portfolio-tag {
     font-size: 1.5em;
     text-align: end;
     font-weight: 300;
@@ -69,12 +76,58 @@ body{
     margin-bottom: 1em;
 }
 
-.portfolio-tag-div{
+.portfolio-tag-div {
     width: 100%;
 }
 
+.hide-image {
+    /* animation: visibleToNone 0.5s ease-out; */
+    opacity: 0;
+}
+
+.visible-image {
+    /* animation: fadeInFromNone 0.5s ease-out; */
+    opacity: 1;
+}
+
 @media (min-width: 320px) and (max-width:500px) {
-    body{
+    body {
         font-size: 60%;
     }
-  }
+}
+
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+@keyframes visibleToNone {
+    0% {
+        display: block;
+        opacity: 1;
+    }
+
+    1% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}

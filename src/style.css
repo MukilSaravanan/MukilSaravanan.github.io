@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+
+
+body {
+    margin: 0px;
+}
+
+
+.homepage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page-background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    z-index: -1;
+    transition : opacity 1s ease-in;
+}
+
+.home-page-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    /* font-family: futura-pt, sans-serif; */
+    font-family: 'PT Sans Caption', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.homepage-nav-ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.homepage-nav-li {
+    font-size: 1em;
+    font-weight: 800;
+    margin: 1em 0px;
+}
+
+.home-page-li-anchor {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.home-page-li-anchor:hover {
+    color: rgba(255,255,255,.6);
+}
+
+
+.portfolio-name {
+    font-weight: 800;
+    margin: 0px;
+    font-size: 3em;
+    height: 1.2em;
+}
+
+.portfolio-tag {
+    font-size: 1em;
+    text-align: end;
+    font-weight: 300;
+    margin: 0px;
+    margin-bottom: 1em;
+}
+
+.portfolio-tag-div {
+    width: 100%;
+}
+
+.hide-image {
+    /* animation: visibleToNone 0.5s ease-out; */
+    opacity: 0;
+}
+
+.visible-image {
+    /* animation: fadeInFromNone 0.5s ease-out; */
+    opacity: 1;
+}
+
+@media (min-width: 320px) and (max-width:500px) {
+    body {
+        font-size: 60%;
+    }
+}
+
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+@keyframes visibleToNone {
+    0% {
+        display: block;
+        opacity: 1;
+    }
+
+    1% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}

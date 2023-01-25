@@ -216,7 +216,7 @@ p {
 
 .skills-div>div{
     display: flex;
-    gap: 3.33%;
+    justify-content: space-evenly;
 }
 
 .skill-icon{

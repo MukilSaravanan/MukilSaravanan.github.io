@@ -1,8 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Sofia+Sans:wght@300&display=swap');
 
 
 body {
     margin: 0px;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 
@@ -21,7 +33,7 @@ body {
     object-fit: cover;
     object-position: 50% 50%;
     z-index: -1;
-    transition : opacity 1s ease-in;
+    transition: opacity 1s ease-in;
 }
 
 .home-page-center {
@@ -57,7 +69,7 @@ body {
 }
 
 .home-page-li-anchor:hover {
-    color: rgba(255,255,255,.6);
+    color: rgba(255, 255, 255, .6);
 }
 
 
@@ -90,11 +102,6 @@ body {
     opacity: 1;
 }
 
-@media (min-width: 320px) and (max-width:500px) {
-    body {
-        font-size: 60%;
-    }
-}
 
 
 @keyframes fadeInFromNone {
@@ -132,7 +139,7 @@ body {
     }
 }
 
-.overlay-background{
+.overlay-background {
     position: relative;
     z-index: 0;
     background-color: white;
@@ -141,9 +148,74 @@ body {
     padding: 50px 0px;
 }
 
-.about-me-div{
-    width:80vw;
-    background-color: azure;
-    height: 500px;
+.about-me-div {
+    width: 80vw;
+    background-color: #fefefe;
+    /* height: 500px; */
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me-left {
+    width: 50%;
+    padding: 20px 15px 20px 20px;
+}
+
+.about-me-right {
+    width: 50%;
+    padding: 20px 20px 20px 15px;
+}
+
+.about-me-profile-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: 25% 100%;
+}
+
+.about-me-title-div {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.about-me-title {
+    margin: 0px;
+    font-size: 1.3em;
+    text-transform: uppercase
+}
+
+.about-me-title:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #ffa59e;
+    width: 85px;
+    bottom: -12px;
+}
+
+.about-me-content {
+    font-size: 1.1rem;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 500;
+}
+
+@media (min-width: 320px) and (max-width:500px) {
+    body {
+        font-size: 60%;
+    }
+
+
+    .about-me-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me-left {
+        width: 100%;
+    }
+
+    .about-me-right {
+        width: 100%;
+    }
 }

@@ -378,7 +378,7 @@ ul {
 .timeline-div {
     width: 80vw;
     margin: 50px 0px;
-    padding: 20px 0px;
+    padding: 20px 20px 50px;
     text-align: center;
     font-family: 'Sofia Sans', sans-serif;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
@@ -514,6 +514,10 @@ ul {
 }
 
 @media (min-width: 768px) {
+    .timeline-div{
+        padding: 20px;
+    }
+
     .timeline:before {
         left: 50%;
     }

@@ -223,11 +223,16 @@ ul {
     padding: 0px 0px 30px 0px;
     justify-content: center;
     text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 .skills-div>div {
     display: flex;
     justify-content: space-evenly;
+}
+
+.skills-div>h2{
+    font-family: 'PT Sans Caption', sans-serif;
 }
 
 .skill-icon {
@@ -373,6 +378,17 @@ ul {
 .timeline-div {
     width: 75%;
     padding: 50px 0px;
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.timeline-div>h2{
+    font-family: 'PT Sans Caption', sans-serif;
+    margin: 0px 0px 10px 0px;
+}
+
+.timeline-div>p{
+    margin: 0px 0px 30px 0px;
 }
 
 .timeline {

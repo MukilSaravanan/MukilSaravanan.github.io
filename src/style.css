@@ -363,7 +363,11 @@ ul {
         display: inline;
     }
 
-    #mainNav.nav-mobile  .collapse.navbar-collapse {
+    #mainNav.hidden  .collapse.navbar-collapse {
+        display: none;
+    }
+
+    #mainNav.visible  .collapse.navbar-collapse {
         position: absolute;
         top: 45px;
         left: 0;
@@ -374,13 +378,13 @@ ul {
         justify-content: flex-start;
     }
     
-    #mainNav.nav-mobile .navbar-nav {
+    #mainNav .navbar-nav {
         background: #212529;
         flex-direction: column;
         align-items: flex-start;
     }
     
-    #mainNav.nav-mobile  .nav-item {
+    #mainNav .nav-item {
         width: 100%;
         /* text-align: center; */
         padding: 10px;

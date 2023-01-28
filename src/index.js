@@ -10,8 +10,25 @@ function backgroundChange() {
     backgroundImage[imageIndex].classList.add("visible-image")
 }
 
+function NavMenuClick(){
+    let mainNav = document.getElementById("mainNav")
+    let navMenuButton = document.querySelector(".navbar-toggler")
+    navMenuButton.addEventListener("click",()=>{
+        if (mainNav.classList.contains("visible")) {
+            mainNav.classList.remove("visible");
+            mainNav.classList.add("hidden");
+          } else {
+            mainNav.classList.remove("hidden");
+            mainNav.classList.add("visible");
+          }
+    })
+}
+
 window.onload = function () {
+    NavMenuClick()
     setInterval(() => {
         backgroundChange()
     }, 5000);
 };
+
+

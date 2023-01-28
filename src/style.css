@@ -289,7 +289,7 @@ ul {
 
 .site-header {
     position: sticky;
-    top: 0px;
+    top: -1px;
     z-index: 100;
     width: 100%;
 }
@@ -356,15 +356,34 @@ ul {
 @media (min-width: 320px) and (max-width:720px) {
 
     #mainNav{
-        font-size: 60%;
+        font-size: 80%;
     }
 
     #mainNav .navbar-toggler {
         display: inline;
     }
 
-    #mainNav .navbar-collapse{
-        display:none;
+    #mainNav.nav-mobile  .collapse.navbar-collapse {
+        position: absolute;
+        top: 45px;
+        left: 0;
+        padding: 5px 10px;
+        display: flex;
+        width: 100%;
+        background: #212529;
+        justify-content: flex-start;
+    }
+    
+    #mainNav.nav-mobile .navbar-nav {
+        background: #212529;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #mainNav.nav-mobile  .nav-item {
+        width: 100%;
+        /* text-align: center; */
+        padding: 10px;
     }
 }
 

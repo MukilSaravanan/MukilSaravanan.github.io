@@ -15,4 +15,3 @@ window.onload = function () {
         backgroundChange()
     }, 5000);
 };
-

@@ -528,6 +528,7 @@ ul {
 .timeline .timeline-body>ul,
 .timeline .timeline-body>p {
     margin-bottom: 0;
+    text-align: justify;
 }
 
 .img-circle.img-responsive {
@@ -580,7 +581,7 @@ ul {
 
 @media (min-width: 992px) {
     .timeline>li {
-        min-height: 150px;
+        min-height: 100px;
     }
 
     .timeline>li .timeline-panel {
@@ -588,15 +589,15 @@ ul {
     }
 
     .timeline>li .timeline-image {
-        width: 150px;
-        height: 150px;
-        margin-left: -75px;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
     }
 
     .timeline>li .timeline-image h4 {
-        font-size: 18px;
-        line-height: 26px;
-        margin-top: 30px;
+        font-size: 13px;
+        line-height: 18px;
+        margin-top: 16px;
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {

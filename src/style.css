@@ -87,12 +87,13 @@ ul {
 }
 
 .social-media-icon-homepage {
-    font-size: 2em;
+    font-size: 1.75em;
     display: flex;
     justify-content: center
 }
 
 .social-media-homepage {
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -278,8 +279,6 @@ ul {
     }
 
     .social-media-homepage {
-        display: grid;
-        grid-template-columns: auto auto auto;
         gap: 10px;
     }
 

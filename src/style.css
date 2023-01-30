@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Sofia+Sans:wght@300&display=swap');
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
     scroll-padding-top: 52px;
 }
 
@@ -17,7 +17,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #222;
+    color: inherit;
 }
 
 ol,
@@ -86,6 +86,19 @@ ul {
     color: rgba(255, 255, 255, .6);
 }
 
+.social-media-icon-homepage {
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center
+}
+
+.social-media-homepage {
+    display: flex;
+    flex-direction: row;
+    /* display: grid; */
+    /* grid-template-columns: auto auto auto; */
+    gap: 10px;
+}
 
 .portfolio-name {
     font-weight: 800;
@@ -266,6 +279,12 @@ ul {
         font-size: 60%;
     }
 
+    .social-media-homepage {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+
 
     .about-me-div {
         display: flex;
@@ -359,7 +378,7 @@ ul {
 
 @media (min-width: 320px) and (max-width:720px) {
 
-    #mainNav{
+    #mainNav {
         font-size: 80%;
     }
 
@@ -367,11 +386,11 @@ ul {
         display: inline;
     }
 
-    #mainNav.hidden  .collapse.navbar-collapse {
+    #mainNav.hidden .collapse.navbar-collapse {
         display: none;
     }
 
-    #mainNav.visible  .collapse.navbar-collapse {
+    #mainNav.visible .collapse.navbar-collapse {
         position: absolute;
         top: 45px;
         left: 0;
@@ -381,13 +400,13 @@ ul {
         background: #212529;
         justify-content: flex-start;
     }
-    
+
     #mainNav .navbar-nav {
         background: #212529;
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     #mainNav .nav-item {
         width: 100%;
         /* text-align: center; */

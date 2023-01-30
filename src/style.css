@@ -622,7 +622,7 @@ ul {
 
 @media (min-width: 1200px) {
     .timeline>li {
-        min-height: 170px;
+        min-height: 120px;
     }
 
     .timeline>li .timeline-panel {
@@ -630,13 +630,13 @@ ul {
     }
 
     .timeline>li .timeline-image {
-        width: 170px;
-        height: 170px;
-        margin-left: -85px;
+        width: 120px;
+        height: 120px;
+        margin-left: -60px;
     }
 
     .timeline>li .timeline-image h4 {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {

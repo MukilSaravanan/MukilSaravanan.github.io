@@ -280,9 +280,8 @@ ul {
     .social-media-homepage {
         display: grid;
         grid-template-columns: auto auto auto;
+        gap: 10px;
     }
-
-
 
     .about-me-div {
         display: flex;

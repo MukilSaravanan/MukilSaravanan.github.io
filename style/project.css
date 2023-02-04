@@ -1,16 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-*{
+* {
     box-sizing: border-box;
 }
 
-.project-container{
+.project-container {
     margin: 0 auto;
     max-width: 994px;
     padding: 0 10px;
     width: 100%;
     font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
+.hide{
+    display: none !important;
+}
+
+.tab {
+    overflow: hidden;
+    width: fit-content;
+    display: flex;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.67);
+    padding: 0.3em 0.5em;
+    margin: 0.1em 0px;
+    font-size: 100%;
+    /* border-radius: 3px; */
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #0F2E3DE0;
+    color: white;
+    border: 3px solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #0F2E3D;
+}
+
+.tab button:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: 0px;
+    border-left: 3px solid #0F2E3D;
+}
+
+.tab button:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: 0px;
+    border-right: 3px solid #0F2E3D;
+}
+
+/* Change background color of buttons on hover */
+/* .tab button:hover {
+    border-color: #0F2E3D;
+} */
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #0F2E3D;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
 
 .project-container .post {
     overflow: hidden;
@@ -25,18 +90,19 @@
     border-bottom: none
 }
 
-.index-a{
+.index-a {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 
-.index-a-div{
+.index-a-div {
     width: 50%;
+    padding: 0px 20px;
 }
 
 .metadata {
     margin-right: 8px;
-    color: rgba(0,0,0,0.8);
+    color: rgba(0, 0, 0, 0.8);
     line-height: 1.4em;
     font-size: 12px;
 }
@@ -54,11 +120,11 @@
 
 .tags .tag {
     display: inline-block;
-    color: rgba(0,0,0,0.67);
+    color: rgba(0, 0, 0, 0.67);
     padding: 0.3em 0.5em;
     margin: 0.1em;
     font-size: 80%;
-    border: 1px solid rgba(0,0,0,0.4);
+    border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 3px;
     text-transform: uppercase;
     font-weight: 500
@@ -102,17 +168,19 @@
 
 @media (max-width: 768px) {
 
-    .index-a{
+    .index-a {
         flex-direction: column;
     }
-    
-    .index-a-div{
+
+    .index-a-div {
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .thumbnail , .metadata ,.narrow-description {
+    .thumbnail,
+    .metadata,
+    .narrow-description {
         width: 100%;
     }
 

@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
 
 /* Track */
 body::-webkit-scrollbar-track {
-    background:  white;
+    background: white;
 }
 
 /* Handle */
@@ -661,5 +661,35 @@ ul {
 
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 100px 20px 20px;
+    }
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    background: #212529;
+    border: 3px solid #212529;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.scroll-to-top.visible {
+    visibility: visible;
+}
+
+@media (max-width: 700px) {
+    .scroll-to-top {
+        width: 25px;
+        height: 25px;
+        right: 5px;
+        font-size: 1em;
     }
 }

@@ -26,6 +26,9 @@ function NavMenuClick(){
 
 window.onload = function () {
     NavMenuClick()
+    const showButton = () => document.querySelector(".scroll-to-top").classList.add("visible");
+    const hideButton = () => document.querySelector(".scroll-to-top").classList.remove("visible");
+    document.addEventListener("scroll", (e) => window.scrollY < 1000 ? hideButton() : showButton());
     setInterval(() => {
         backgroundChange()
     }, 5000);

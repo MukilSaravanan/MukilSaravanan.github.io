@@ -1,25 +1,20 @@
 
 function tabEvents() {
     let tabElements = document.querySelectorAll('.tablinks');
-    console.log(tabElements)
+    // console.log(tabElements)
     tabElements.forEach((tab) => {
-        tab.addEventListener("click", () => {
+        tab.addEventListener("click", (e) => {
+            e.preventDefault()
+            e.stopPropagation()
             let tabName = tab.innerHTML.trim().toLowerCase();
+            let tabs = document.querySelectorAll(".tablinks.tabs")
+            console.log(tabs)
             tabElements.forEach((tab) => {
                 tab.classList.remove("active")
             })
-            tab.classList.add("active");
-            let posts = document.querySelectorAll(".post")
-            posts.forEach((post) => {
-                let categoryTag = post.querySelector(".tag.category");
-                let categoryTagName = categoryTag.innerHTML.trim().toLowerCase()
-                if (tabName === "all") {
-                    post.classList.remove("hide")
-                } else {
-                    post.classList.remove("hide")
-                    if (tabName !== categoryTagName) {
-                        post.classList.add("hide")
-                    }
+            tabs.forEach((tab) => {
+                if (tab.innerHTML.trim().toLowerCase() === tabName) {
+                    tab.classList.add("active")
                 }
             })
         })
@@ -37,4 +32,17 @@ function tabEvents() {
 
 window.onload = function () {
     tabEvents()
+    mixitup('#posts', {
+        animation: {
+            effects: 'fade scale(0.01) translate(0px, -500px);',
+            duration: 400
+        },
+        classNames: {
+            block: '#posts',
+            elementFilter: 'tablinks'
+        },
+        selectors: {
+            target: '.post'
+        }
+    });
 };

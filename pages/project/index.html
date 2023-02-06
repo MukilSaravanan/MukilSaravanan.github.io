@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../style/project.css">
     <link rel="stylesheet" href="../../style/style.css">
     <script src="../../js/project.js"></script>
+    <script src="../../js/mixItUp.js" ></script>
     <title>Projects - Mukil Saravanan</title>
 </head>
 
@@ -47,13 +48,15 @@
         </nav>
     </header>
     <main id="main" class="project-container">
+        <h2>PROJECTS</h2>
+        <p>A short summary of projects..</p>
         <div class="tab">
-            <button class="tablinks active">ALL</button>
-            <button class="tablinks">LEARNING</button>
-            <button class="tablinks">RESEARCH</button>
+            <button class="tablinks tabs active" data-filter="all">ALL</button>
+            <button class="tablinks tabs" data-filter=".learning">LEARNING</button>
+            <button class="tablinks tabs" data-filter=".research">RESEARCH</button>
         </div>
-        <div>
-            <div class="post">
+        <div id="posts">
+            <div class="post learning" >
                 <a class="index-a" href="">
                     <div class="index-a-div">
                         <div class="narrow-description">
@@ -66,7 +69,7 @@
                         <div class="metadata">
                             <div class="date">February 23, 2022</div>
                             <div class="tags">
-                                <div class="tag category">
+                                <div class="tag category tablinks" data-filter=".learning">
                                     learning
                                 </div>
                                 <br>
@@ -91,7 +94,7 @@
                     </div>
                 </a>
             </div>
-            <div class="post">
+            <div class="post research" >
                 <a class="index-a" href="">
                     <div class="index-a-div">
                         <div class="narrow-description">
@@ -104,7 +107,7 @@
                         <div class="metadata">
                             <div class="date">February 23, 2022</div>
                             <div class="tags">
-                                <div class="tag category">
+                                <div class="tag category tablinks" data-filter=".research">
                                     RESEARCH
                                 </div>
                                 <br>
@@ -129,7 +132,7 @@
                     </div>
                 </a>
             </div>
-            <div class="post">
+            <div class="post learning" >
                 <a class="index-a" href="">
                     <div class="index-a-div">
                         <div class="narrow-description">
@@ -142,7 +145,7 @@
                         <div class="metadata">
                             <div class="date">February 23, 2022</div>
                             <div class="tags">
-                                <div class="tag category">
+                                <div class="tag category tablinks" data-filter=".learning">
                                     learning
                                 </div>
                                 <br>

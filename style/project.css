@@ -14,7 +14,14 @@
     flex-direction: column;
     align-items: center;
 }
+.project-container>h2{
+    font-family: 'PT Sans Caption', sans-serif;
+    margin: 10px 0px 10px 0px
+}
 
+.tablinks{
+    cursor: pointer;
+}
 
 .hide{
     display: none !important;

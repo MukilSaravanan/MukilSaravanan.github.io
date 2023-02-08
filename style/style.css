@@ -670,19 +670,29 @@ footer{
     padding: 10px 20px 10px 10px;
     border: none;
     display: flex;
+    flex-direction: column;
     color: white;
     justify-content: space-between;
     align-items: center;
 }
 
-footer>p{
+footer p{
     font-family: 'Sofia Sans', sans-serif;
     margin: 0px;
 }
 
 footer>div.social-media-homepage{
-    padding-top:0px;
+    padding-top:10px;
     font-size: 0.8em;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
 }
 
 .scroll-to-top {

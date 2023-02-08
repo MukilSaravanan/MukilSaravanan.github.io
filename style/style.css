@@ -664,6 +664,27 @@ ul {
     }
 }
 
+footer{
+    background-color: #212529;
+    width: 100%;
+    padding: 10px 20px 10px 10px;
+    border: none;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer>p{
+    font-family: 'Sofia Sans', sans-serif;
+    margin: 0px;
+}
+
+footer>div.social-media-homepage{
+    padding-top:0px;
+    font-size: 0.8em;
+}
+
 .scroll-to-top {
     position: fixed;
     bottom: 50px;

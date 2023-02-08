@@ -667,7 +667,8 @@ ul {
 footer{
     background-color: #212529;
     width: 100%;
-    padding: 10px 20px 10px 10px;
+    padding: 10px;
+    padding-bottom: 30px;
     border: none;
     display: flex;
     flex-direction: column;
@@ -678,12 +679,12 @@ footer{
 
 footer p{
     font-family: 'Sofia Sans', sans-serif;
-    margin: 0px;
+    margin: 10px;
 }
 
 footer>div.social-media-homepage{
-    padding-top:10px;
-    font-size: 0.8em;
+    padding:30px;
+    font-size: 0.9em;
 }
 
 .footer-text {

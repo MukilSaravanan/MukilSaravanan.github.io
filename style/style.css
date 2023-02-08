@@ -686,7 +686,7 @@ footer p>a{
     background: linear-gradient(90deg,white 0,white),linear-gradient(90deg,#5c69dc 0,#5c69dc 70%,white 95.6%);
     background-position: 100% 100%,0 100%;
     background-repeat: no-repeat;
-    background-size: 100% 3px,0 3px;
+    background-size: 100% 2px,0 2px;
     text-decoration: none;
 }
 

@@ -722,6 +722,7 @@ footer>div.social-media-homepage{
     border: 3px solid #212529;
     border-radius: 50%;
     opacity: 0;
+    animation: fadeOutUp 1s;
 }
 
 .scroll-to-top.visible {
@@ -739,11 +740,18 @@ footer>div.social-media-homepage{
     }
  }
 
+@keyframes fadeOutUp {
+    0% {
+       opacity: 1;
+    }
+    100% {
+       transform: translateY(-20px);
+       opacity: 0;
+    }
+ }
+
 @media (max-width: 700px) {
     .scroll-to-top {
-        width: 25px;
-        height: 25px;
-        right: 5px;
-        font-size: 1em;
+        display: none;
     }
 }

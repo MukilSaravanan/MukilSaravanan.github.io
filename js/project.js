@@ -22,19 +22,28 @@ function tabEvents() {
     })
 }
 
+function NavMenuClick(){
+    let mainNav = document.getElementById("mainNav")
+    let navMenuButton = document.querySelector(".navbar-toggler")
+    navMenuButton.addEventListener("click",()=>{
+        if (mainNav.classList.contains("visible")) {
+            mainNav.classList.remove("visible");
+            mainNav.classList.add("hidden");
+          } else {
+            mainNav.classList.remove("hidden");
+            mainNav.classList.add("visible");
+          }
+    })
+}
+
 const showHeaderBackground = () => document.querySelector(".site-header.project").classList.remove("transparent");
 const hideHeaderBackground = () => document.querySelector(".site-header.project").classList.add("transparent");
 document.addEventListener("scroll", (e) => window.scrollY < 100 ? hideHeaderBackground() : showHeaderBackground());
 
 
 
-
-
-
-
-
-
 window.onload = function () {
+    NavMenuClick()
     tabEvents()
     mixitup('#posts', {
         animation: {

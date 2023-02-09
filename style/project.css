@@ -48,6 +48,19 @@
     background-size: cover;
 }
 
+@media (min-width: 320px) and (max-width:720px) {
+    .site-header.project.transparent>#mainNav.visible .collapse.navbar-collapse {
+        top: 65px !important;
+        padding: 5px 18px;
+        transition: all 250ms ease;
+    }
+    .site-header.project.transparent>nav#mainNav{
+        background-color: #212529;
+        padding: 20px 30px 20px 20px;
+    }
+}
+
+
 
 .banner-wrap::before {
     position: absolute;

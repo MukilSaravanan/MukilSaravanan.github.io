@@ -13,16 +13,12 @@
     margin: 0 auto;
     max-width: 994px;
     padding: 0 10px;
+    padding-top: 30px;
     width: 100%;
     font-family: 'Nunito', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.project-container>h2{
-    font-family: 'PT Sans Caption', sans-serif;
-    margin: 10px 0px 10px 0px
 }
 
 .site-header.project>nav#mainNav{

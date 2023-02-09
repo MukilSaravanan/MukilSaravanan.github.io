@@ -22,6 +22,10 @@ function tabEvents() {
     })
 }
 
+const showHeaderBackground = () => document.querySelector(".site-header.project").classList.remove("transparent");
+const hideHeaderBackground = () => document.querySelector(".site-header.project").classList.add("transparent");
+document.addEventListener("scroll", (e) => window.scrollY < 100 ? hideHeaderBackground() : showHeaderBackground());
+
 
 
 

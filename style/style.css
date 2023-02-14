@@ -552,8 +552,17 @@ ul {
 }
 
 .timeline .timeline-heading h4 {
-    margin-top: 0;
+    margin-top: 34px;
     color: inherit;
+}
+
+h5.year {
+    margin: 20px 0px 0px 0px;
+}
+
+h4.sub-title {
+    margin: 10px 0px;
+    margin-top: 10px !important;
 }
 
 .timeline .timeline-heading h4.subheading {

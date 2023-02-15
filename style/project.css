@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.inline-a{
+    display: inline;
+    text-decoration: underline;
+}
+
 .site-header.project{
     position: fixed;
     transition: all 250ms ease;

@@ -27,10 +27,4 @@ window.onload = () => {
         })
     })
 
-    popUpClose.forEach((close)=>{
-        close.addEventListener("click",()=>{
-            
-        })
-    })
-
 }

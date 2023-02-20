@@ -1,0 +1,49 @@
+.media-container {
+    margin: 0 auto;
+    width: 80vw;
+    padding: 0 10px;
+    padding-top: 30px;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#posts{
+    width:100%;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.description {
+    font-size: 1.3em;
+}
+
+.media-images {
+    padding: 20px 0;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.media-image{
+    width: 47%;
+}
+
+.media-image>img {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .media-image{
+        width: 95%;
+    }
+    
+}

@@ -120,23 +120,22 @@
 
 @media (max-width: 768px) {
 
+    .beyond-tech-images {
+        grid-template-columns: 85%;
+    }
     .container-div .overlay>.inner-overlay-div{
         visibility: hidden;
-        margin: 10px;
+        margin: 20px;
     }
     
 
     .container-div:hover .overlay>.inner-overlay-div>div.description {
         margin-bottom: 10px;
-        font-size: 1.9em;
+        font-size: 15px;
     }
 
     .container-div:hover .overlay>.inner-overlay-div>div {
-        min-width: 25vw;
-    }
-
-    .container-div div {
-        font-size: 0.7em;
+        min-width: 70vw;
     }
 
     .container-div .tag{

@@ -21,7 +21,7 @@
 }
 
 .description {
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 .media-images {
@@ -48,11 +48,16 @@
 
 }
 
+.beyond-tech-container{
+    max-width: fit-content;
+    margin:0px 50px;
+}
+
 .beyond-tech-images {
     padding: 20px 0;
     justify-content: center;
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 30% 30% 30%;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -60,6 +65,7 @@
 .overlay-container {
     display: inline-block;
     position: relative;
+    height: fit-content;
 }
 
 
@@ -79,7 +85,7 @@
 .container-div .overlay {
     position: absolute;
     width: 0%;
-    height: inherit;
+    height: 99%;
     top: 0;
     z-index: 1;
     border-radius: 6px;
@@ -96,7 +102,7 @@
 
 .container-div .overlay>.inner-overlay-div{
     visibility: hidden;
-    margin: 50px;
+    margin: 40px;
 }
 
 
@@ -112,7 +118,7 @@
 }
 
 .container-div:hover .overlay>.inner-overlay-div>div {
-    min-width: 25vw;
+    min-width: 20vw;
 }
 
 

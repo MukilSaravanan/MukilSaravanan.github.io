@@ -92,6 +92,8 @@
     color: white;
     background: rgba(40, 40, 40, .6);
     transition: width 0.8s ease-in-out;
+    display: flex;
+    align-items: center;
 }
 
 .container-div:hover .overlay {

@@ -148,6 +148,11 @@
 }
 
 
+.project-container .title {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
 .project-container .post {
     overflow: hidden;
     padding-bottom: 2em;

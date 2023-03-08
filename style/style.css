@@ -554,6 +554,10 @@ ul {
     margin-bottom: 0;
 }
 
+ul.lead {
+    list-style: circle;
+}
+
 .timeline .timeline-heading h4 {
     margin-top: 34px;
     color: inherit;

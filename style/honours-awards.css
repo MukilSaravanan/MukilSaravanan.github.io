@@ -44,6 +44,7 @@
     }
 }
 .popup-thumbnail>div{
+    position: relative;
     width: 60vw;
     border: 1px solid black;
     background: white;
@@ -51,7 +52,7 @@
 .popup-thumbnail img{
     object-fit:contain;
     width: 100%;
-    padding:20px 0px;
+    padding:20px;
     max-height: 70vh;
 }
 
@@ -64,15 +65,17 @@ body.popup{
 }
 
 button.popup-close {
-    background: white;
+    position: absolute;
+    background: url(../assets/close.png);
     border:none;
     outline: none;
     margin: 0;
+    right: -15px;
+    top: -15px;
     padding: 0;
-    font-size: 30px;
-    width: 20px;
+    width: 35px;
     cursor: pointer;
-    height: 20px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;

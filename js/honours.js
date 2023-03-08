@@ -18,6 +18,7 @@ window.onload = () => {
     thumpnailImage.forEach((image) => {
         image.addEventListener("click",()=>{
             let postDiv = image.parentElement.parentElement
+            console.log()
             let popUpDiv = postDiv.querySelector(".popup-thumbnail")
             popUpDiv.classList.add("active")
             document.body.classList.add("popup")

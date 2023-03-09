@@ -189,6 +189,26 @@
     margin-top: 0.5em;
 }
 
+.a-tag {
+    padding: 2px 5px;
+    font-size: 1.2em;
+    width: fit-content;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.a-tag>a {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.a-tags {
+    display: flex;
+    gap: 4px;
+    flex-direction: row;
+}
+
 .tag.category {
     background-color: #0F2E3DE0;
     color: white;

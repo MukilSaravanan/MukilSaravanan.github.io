@@ -51,6 +51,11 @@ ul {
     box-sizing: border-box;
 }
 
+.inline-a{
+    display: inline;
+    color:rgb(72 136 203);
+    text-decoration: underline;
+}
 
 .homepage {
     height: 100vh;

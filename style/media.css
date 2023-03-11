@@ -53,6 +53,55 @@
     margin:0px 50px;
 }
 
+p.beyond-tech-text {
+    text-align: justify;
+}
+
+p.beyond-tech-text:first-letter {
+    font-size:1.3em;
+    padding-left:30px;
+}
+
+
+.beyond-tech-video-container {
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    justify-content: space-around;
+    height: 25.3125vw;
+}
+
+iframe.beyond-tech-video {
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnail.cerificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    height: 400px;
+}
+
+.thumbnail.cerificate>img {
+    border: 1px solid black;
+}
+
+.beyond-tech-column-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.beyond-tech-column-container .thumbnail.cerificate {
+    width: 90%;
+    margin-top: 0px;
+}
+
+.beyond-tech-column-container .thumbnail.cerificate>img {
+    border: none;
+}
+
 .beyond-tech-images {
     padding: 20px 0;
     justify-content: center;

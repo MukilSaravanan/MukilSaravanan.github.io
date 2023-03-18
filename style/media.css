@@ -173,6 +173,17 @@ iframe.beyond-tech-video {
     min-width: 20vw;
 }
 
+.overlay .title {
+    padding-bottom: 0px;
+}
+
+.overlay .location {
+    padding-bottom: 10px;
+    display: flex;
+    gap: 4px;
+    font-size: 0.7em;
+}
+
 
 .main-banner {
     gap: 3%;

@@ -14,6 +14,10 @@ img.contact-us-me {
     flex-direction: row-reverse;
 }
 
+.contact-us-container h3 {
+    margin: 10px 0px;
+}
+
 .contact-us-container>div:nth-child(1) {
     display: flex;
     flex-direction: column;
@@ -29,12 +33,11 @@ img.contact-us-me {
 }
 
 ul.social-media-container {
-    height: -webkit-fill-available;
     padding: 0px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 12px;
+    justify-items: start;
 }
 
 ul.social-media-container>li>a {
@@ -57,3 +60,19 @@ ul.social-media-container>li>a>i {
 .fa-linkedin, .fa-linkedin-square { color: #007bb6;}
 .fa-instagram { color: #fd2444; }
 .fa-orcid { color: #a6ce39; }
+
+@media (max-width: 768px) {
+
+    ul.social-media-container {
+        grid-template-columns: auto;
+    }
+    
+    .contact-us-container {
+        font-size: 1.4em;
+    }
+
+    .contact-us-container>div:nth-child(2){
+        display: none;
+    }
+
+}

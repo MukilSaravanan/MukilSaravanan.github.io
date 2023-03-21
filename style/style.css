@@ -559,6 +559,10 @@ ul {
     margin-bottom: 0;
 }
 
+.timeline>.timeline-panel p.lead {
+    text-align: end;
+}
+
 ul.lead {
     list-style: circle;
 }

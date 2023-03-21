@@ -6,14 +6,14 @@ function tabEvents() {
         tab.addEventListener("click", (e) => {
             e.preventDefault()
             e.stopPropagation()
-            let tabName = tab.innerHTML.trim().toLowerCase();
+            let tabName = tab.getAttribute("data-filter");
             let tabs = document.querySelectorAll(".tablinks.tabs")
-            console.log(tabs)
             tabElements.forEach((tab) => {
                 tab.classList.remove("active")
             })
             tabs.forEach((tab) => {
-                if (tab.innerHTML.trim().toLowerCase() === tabName) {
+                console.log(tab, tabName , tab.getAttribute("data-filter"))
+                if (tab.getAttribute("data-filter") === tabName) {
                     tab.classList.add("active")
                 }
             })
@@ -59,6 +59,7 @@ window.onload = function () {
         }
     });
     scrollToTop();
+    tagSpaceRemoval();
 };
 
 function scrollToTop() {
@@ -70,5 +71,15 @@ function scrollToTop() {
     const scrollToTopButton = document.querySelector(".scroll-to-top")
     scrollToTopButton.addEventListener("click",()=>{
         window.scrollTo(0, 0);
+    })
+}
+
+function tagSpaceRemoval(){
+    const tags = document.querySelectorAll(".tags .tag:not(.category)");
+    console.log(tags)
+    tags.forEach((tag)=>{
+       const innerHTML = tag.textContent.trim()
+       let formattedString = innerHTML.split(" ").join("_")
+       tag.innerHTML  = formattedString
     })
 }

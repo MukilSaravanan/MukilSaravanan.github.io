@@ -233,6 +233,22 @@
     border-color: #0F2E3D
 }
 
+.tags .tag:not(.category)::before {
+    content:"#";
+    position:absolute;
+    left:-3px;
+    font-weight: 700;
+    font-size: 120%;
+}
+
+.tags .tag:not(.category){
+    border:none;
+    position:relative;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: 5px;
+}
+
 /* .narrow-description {
     width: 35%;
 } */

@@ -209,10 +209,12 @@ main .wsite-section-content {
 }
 
 main .wsite-section-content.photography {
-    background-image: url(../assets/front_page/background-image-3.jpg);
+    background-image: url(../assets/beyond-tech/photography/Mukil\ photographing\ \(2\).png);
+    /* background-image: url(../assets/front_page/background-image-3.jpg); */
 }
 main .wsite-section-content.beat-boxing {
-    background-image: url(../assets/front_page/background-image-2.jpg);
+    /* background-image: url(../assets/beyond-tech/beat-boxing/Screenshot\ from\ 2023-03-21\ 23-50-52.png); */
+    background-image: url(../assets/beyond-tech/beat-boxing/20191226_193650.jpg);
 }
 
 main h2.wsite-content-title {

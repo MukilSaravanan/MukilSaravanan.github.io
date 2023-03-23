@@ -11,6 +11,9 @@
     <script src="https://kit.fontawesome.com/b938213276.js" crossorigin="anonymous"></script>
     <script src="../../js/project.js"></script>
     <script src="../../js/mixItUp.js"></script>
+    <script src="../../js/photoswipe/photoswipe.umd.min.js"></script>
+    <script src="../../js/photoswipe/photoswipe-lightbox.umd.min.js"></script>
+    <link rel="stylesheet" href="../../style/photobox.css">
     <title>Outreaches & Blogs - Mukil Saravanan</title>
 </head>
 
@@ -49,8 +52,9 @@
                             <a class="nav-link" href="../../pages/contact/index.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../../assets/misc/Mukil_Saravanan_LongCV_Feb2023.pdf" target="_blank"><i class="fa-solid fa-file"></i>&nbsp;Resume</a>
-                        </li> 
+                            <a class="nav-link" href="../../assets/misc/Mukil_Saravanan_LongCV_Feb2023.pdf"
+                                target="_blank"><i class="fa-solid fa-file"></i>&nbsp;Resume</a>
+                        </li>
 
                     </ul>
                 </div>
@@ -69,12 +73,16 @@
             <button class="tablinks tabs" data-filter=".research">RESEARCH</button>
         </div> -->
         <div id="posts">
-            <div class="post" >
+            <div class="post">
                 <div class="title">
-                    IEEE International Conference for Women in Innovation, Technology & Entrepreneurship (ICWITE 2022)</div>
+                    IEEE International Conference for Women in Innovation, Technology & Entrepreneurship (ICWITE 2022)
+                </div>
                 <div class="description">
-                    Conducted a workshop to around 40 multi-discplinary students and industrialists on <b>Cobotics: Perception, Planning & Control</b> in ICWITE 2022 on behalf of <a target="_blank" class="inline-a" href="https://www.abhraroychowdhury.org/">Prof. Abhra Roy Chowdhury</a>
-                    <p>(See <a target="_blank" class="inline-a" href="https://attend.ieee.org/icwite-2022/tutorials/"> Link)</a></p>
+                    Conducted a workshop to around 40 multi-discplinary students and industrialists on <b>Cobotics:
+                        Perception, Planning & Control</b> in ICWITE 2022 on behalf of <a target="_blank"
+                        class="inline-a" href="https://www.abhraroychowdhury.org/">Prof. Abhra Roy Chowdhury</a>
+                    <p>(See <a target="_blank" class="inline-a" href="https://attend.ieee.org/icwite-2022/tutorials/">
+                            Link)</a></p>
                 </div>
                 <div class="metadata">
                     <div class="date">December 3, 2022</div>
@@ -97,28 +105,43 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-images">
-                    <div class="media-image">
-                        <img src="../../assets/outreaches_blogs/ICWITE 2022/IMG_3640.jpg" alt="Mukil demonstrating">
-                    </div>
-                    <div class="media-image">
-                        <img src="../../assets/outreaches_blogs/ICWITE 2022/IMG_3645.jpg" alt="Mukil demonstrating">
-                    </div>
-                    <div class="media-image">
-                        <img src="../../assets/outreaches_blogs/ICWITE 2022/IMG_3643.jpg" alt="Mukil demonstrating">
-                    </div>
-                    <div class="media-image">
-                        <img src="../../assets/outreaches_blogs/ICWITE 2022/IMG_3663.jpg" alt="Group photo">
-                    </div>
+                <div class="media-images media-images-1">
+                    <a href="../../assets/outreaches_blogs/ICWITE 2022/IMG_3640.jpg" data-pswp-width="4032" data-pswp-height="3024"
+                        class="media-image">
+                         <img src="../../assets/outreaches_blogs/ICWITE 2022/IMG_3640.jpg" alt="">
+                     </a>
+                    <a href="../../assets/outreaches_blogs/ICWITE 2022/IMG_3645.jpg" data-pswp-width="4032" data-pswp-height="3024"
+                        class="media-image">
+                         <img src="../../assets/outreaches_blogs/ICWITE 2022/IMG_3645.jpg" alt="">
+                     </a>
+                    <a href="../../assets/outreaches_blogs/ICWITE 2022/IMG_3643.jpg" data-pswp-width="4032" data-pswp-height="2268"
+                        class="media-image">
+                         <img src="../../assets/outreaches_blogs/ICWITE 2022/IMG_3643.jpg" alt="">
+                     </a>
+                    <a href="../../assets/outreaches_blogs/ICWITE 2022/IMG_3663.jpg" data-pswp-width="4032" data-pswp-height="2268"
+                        class="media-image">
+                         <img src="../../assets/outreaches_blogs/ICWITE 2022/IMG_3663.jpg" alt="">
+                     </a>
                 </div>
             </div>
-            <div class="post" >
+            <script type="text/javascript">
+                console.log("test")
+                var lightbox = new PhotoSwipeLightbox({
+                    gallery: '.media-images-1',
+                    children: 'a',
+                    pswpModule: PhotoSwipe
+                });
+                lightbox.init();
+            </script>
+            <div class="post">
                 <div class="title">
                     Contriva - Introduction to Wheeled Mobile Robotics
                 </div>
                 <div class="description">
-                    Conducted a workshop to 60+ undergrad students from all around Tamilnadu on <b>Introduction to Wheeled Mobile Robotics</b> in GCT 2022.
-                    <p>(See <a target="_blank" class="inline-a" href="https://github.com/MukilSaravanan/Wheeled_Mobile_Robotics_101_Workshop">Link</a>)</p>
+                    Conducted a workshop to 60+ undergrad students from all around Tamilnadu on <b>Introduction to
+                        Wheeled Mobile Robotics</b> in GCT 2022.
+                    <p>(See <a target="_blank" class="inline-a"
+                            href="https://github.com/MukilSaravanan/Wheeled_Mobile_Robotics_101_Workshop">Link</a>)</p>
                 </div>
                 <div class="metadata">
                     <div class="date">October 26, 2022</div>
@@ -138,15 +161,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-images">
-                    <div class="media-image">
-                        <img src="../../assets/outreaches_blogs/Contriva 2022/DSC_0034.jpg" alt="Mukil demonstrating">
-                    </div>
-                    <div class="media-image">
-                        <img src="../../assets/outreaches_blogs/Contriva 2022/DSC_0043.jpg" alt="Mukil demonstrating">
-                    </div>
+                <div class="media-images media-images-2">
+                    <a href="../../assets/outreaches_blogs/Contriva 2022/DSC_0034.jpg" data-pswp-width="6000" data-pswp-height="4000"
+                        class="media-image">
+                        <img src="../../assets/outreaches_blogs/Contriva 2022/DSC_0034.jpg" alt="">
+                    </a>
+                    <a href="../../assets/outreaches_blogs/Contriva 2022/DSC_0043.jpg" data-pswp-width="6000" data-pswp-height="4000"
+                        class="media-image">
+                        <img src="../../assets/outreaches_blogs/Contriva 2022/DSC_0043.jpg" alt="">
+                    </a>
                 </div>
             </div>
+            <script type="text/javascript">
+                console.log("test")
+                var lightbox = new PhotoSwipeLightbox({
+                    gallery: '.media-images-2',
+                    children: 'a',
+                    pswpModule: PhotoSwipe
+                });
+                lightbox.init();
+            </script>
         </div>
     </main>
     <footer>

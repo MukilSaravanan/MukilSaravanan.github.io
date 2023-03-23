@@ -11,6 +11,9 @@
     <script src="https://kit.fontawesome.com/b938213276.js" crossorigin="anonymous"></script>
     <script src="../../js/project.js"></script>
     <script src="../../js/mixItUp.js"></script>
+    <script src="../../js/photoswipe/photoswipe.umd.min.js"></script>
+    <script src="../../js/photoswipe/photoswipe-lightbox.umd.min.js"></script>
+    <link rel="stylesheet" href="../../style/photobox.css">
     <title>Media - Mukil Saravanan</title>
 </head>
 
@@ -49,8 +52,9 @@
                             <a class="nav-link" href="../../pages/contact/index.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../../assets/misc/Mukil_Saravanan_LongCV_Feb2023.pdf" target="_blank"><i class="fa-solid fa-file"></i>&nbsp;Resume</a>
-                        </li> 
+                            <a class="nav-link" href="../../assets/misc/Mukil_Saravanan_LongCV_Feb2023.pdf"
+                                target="_blank"><i class="fa-solid fa-file"></i>&nbsp;Resume</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -68,12 +72,14 @@
             <button class="tablinks tabs" data-filter=".research">RESEARCH</button>
         </div> -->
         <div id="posts">
-            <div class="post" >
+            <div class="post">
                 <div class="title">
                     Robotics Innovations Laboratory, IISc Bangalore
                 </div>
                 <div class="description">
-                    Photos are captured during lab visit by various academicians and industrialists including Dr. Tanya Morton from Mathworks UK,Prof. VV Binoy from National Institute of Advanced Studies,  Dr. Trevor Hoey & Dr. Averil Horton from Brunel University London
+                    Photos are captured during lab visit by various academicians and industrialists including Dr. Tanya
+                    Morton from Mathworks UK,Prof. VV Binoy from National Institute of Advanced Studies, Dr. Trevor Hoey
+                    & Dr. Averil Horton from Brunel University London
                 </div>
                 <div class="metadata">
                     <div class="date">March 2022 - Feb 2023</div>
@@ -86,7 +92,7 @@
                             RIL
                         </div>
                         <div class="tag">
-                            IISc 
+                            IISc
                         </div>
                         <div class="tag">
                             2022
@@ -96,28 +102,50 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-images">
-                    <div class="media-image">
-                        <img src="../../assets/media/RIL/1659178238280.jpg" alt="Demonstrating to TATA ELXSI Limited">
-                    </div>
-                    <div class="media-image">
-                        <img src="../../assets/media/RIL/IMG_3862.jpg" alt="Demonstrating to Dr. Tanya Morton from Mathworks UK">
-                    </div>
-                    <div class="media-image">
-                        <img src="../../assets/media/RIL/IMG_3745.jpg" alt="Demonstrating to Prof. VV Binoy from National Institute of Advanced Studies">
-                    </div>
-                    <div class="media-image">
-                        <img src="../../assets/media/RIL/mukil-iisc.jpeg" alt="Demonstrating to Dr. Trevor Hoey & Dr. Averil Horton from Brunel University London">
-                    </div>
+                <div class="media-images media-images-1">
+                    <a href="../../assets/media/RIL/1659178238280.jpg" data-pswp-width="4640" data-pswp-height="3472"
+                        class="media-image">
+
+                        <img src="../../assets/media/RIL/1659178238280.jpg" alt="">
+
+                    </a>
+                    <a href="../../assets/media/RIL/IMG_3862.jpg" data-pswp-width="4032" data-pswp-height="3024"
+                        class="media-image">
+
+                        <img src="../../assets/media/RIL/IMG_3862.jpg" alt="">
+
+                    </a>
+                    <a href="../../assets/media/RIL/IMG_3745.jpg" data-pswp-width="4032" data-pswp-height="3024"
+                        class="media-image">
+
+                        <img src="../../assets/media/RIL/IMG_3745.jpg" alt="">
+
+                    </a>
+                    <a href="../../assets/media/RIL/mukil-iisc.jpeg" data-pswp-width="4032" data-pswp-height="3024"
+                        class="media-image">
+
+                        <img src="../../assets/media/RIL/mukil-iisc.jpeg" alt="">
+
+                    </a>
                 </div>
             </div>
-            <div class="post" >
+            <script type="text/javascript">
+                console.log("test")
+                var lightbox = new PhotoSwipeLightbox({
+                    gallery: '.media-images-1',
+                    children: 'a',
+                    pswpModule: PhotoSwipe
+                });
+                lightbox.init();
+            </script>
+            <div class="post">
                 <div class="title">
                     Centre for Product Design and Manufacturing (CPDM), IISc Bangalore
 
                 </div>
                 <div class="description">
-                    Featured by Centre for Product Design and Manufacturing (CPDM), IISc on multiple occasions for ICRA and IROS 2022 awards
+                    Featured by Centre for Product Design and Manufacturing (CPDM), IISc on multiple occasions for ICRA
+                    and IROS 2022 awards
                     <p>(See <a class="inline-a" href="https://cpdm.iisc.ac.in/cpdm/events.php">Link</a>)</p>
                 </div>
                 <div class="metadata">
@@ -131,22 +159,33 @@
                             Featured
                         </div>
                         <div class="tag">
-                            IISc 
+                            IISc
                         </div>
                         <div class="tag">
                             2022
                         </div>
                     </div>
                 </div>
-                <div class="media-images">
-                    <div class="media-image">
+                <div class="media-images media-images-2">
+                    <a href="../../assets/media/CPDM/Screenshot from 2023-01-22 17-25-16.png" data-pswp-width="4640" data-pswp-height="3472"
+                        class="media-image">
                         <img src="../../assets/media/CPDM/Screenshot from 2023-01-22 17-25-16.png" alt="">
-                    </div>
-                    <div class="media-image">
+                    </a>
+                    <a href="../../assets/media/CPDM/Screenshot from 2023-01-22 17-26-00.png" data-pswp-width="4032" data-pswp-height="3024"
+                        class="media-image">
                         <img src="../../assets/media/CPDM/Screenshot from 2023-01-22 17-26-00.png" alt="">
-                    </div>
+                    </a>
                 </div>
             </div>
+            <script type="text/javascript">
+                console.log("test")
+                var lightbox = new PhotoSwipeLightbox({
+                    gallery: '.media-images-2',
+                    children: 'a',
+                    pswpModule: PhotoSwipe
+                });
+                lightbox.init();
+            </script>
         </div>
     </main>
     <footer>

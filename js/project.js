@@ -58,9 +58,11 @@ window.onload = function () {
             target: '.post'
         }
     });
-    scrollToTop();
     tagSpaceRemoval();
 };
+window.addEventListener("load", () => {
+    scrollToTop();
+})
 
 function scrollToTop() {
     const showButton = () => document.querySelector(".scroll-to-top").classList.add("visible");

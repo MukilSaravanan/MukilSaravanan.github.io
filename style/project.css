@@ -19,7 +19,7 @@
     margin: 0 auto;
     max-width: 994px;
     padding: 0 10px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     width: 100%;
     font-family: 'Nunito', sans-serif;
     display: flex;
@@ -93,9 +93,15 @@
 }
 
 .tab {
+    padding: 20px;
     overflow: hidden;
-    width: fit-content;
+    position: sticky;
     display: flex;
+    width: 100%;
+    background: white;
+    justify-content: center;
+    top: 50px;
+    z-index: 10;
 }
 
 /* Style the buttons inside the tab */

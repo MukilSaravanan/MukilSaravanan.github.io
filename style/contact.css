@@ -53,6 +53,22 @@ ul.social-media-container>li>a>i {
     justify-content: center;
 }
 
+.email-copy {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.email-copy>button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.email-copy>p {
+    margin: 0px;
+}
 
 .fa-twitter, .fa-twitter-square { color: #00aced; }
 .fa-google, .fa-google-plus-square { color: #dd4b39; }

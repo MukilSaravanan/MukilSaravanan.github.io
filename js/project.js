@@ -43,8 +43,8 @@ document.addEventListener("scroll", (e) => window.scrollY < 100 ? hideHeaderBack
 
 
 window.onload = function () {
-    NavMenuClick()
-    tabEvents()
+    // NavMenuClick()
+    // tabEvents()
     mixitup('#posts', {
         animation: {
             effects: 'fade scale(0.01) translate(0px, -500px);',
@@ -62,6 +62,8 @@ window.onload = function () {
 };
 window.addEventListener("load", () => {
     scrollToTop();
+    tabEvents();
+    NavMenuClick();
 })
 
 function scrollToTop() {

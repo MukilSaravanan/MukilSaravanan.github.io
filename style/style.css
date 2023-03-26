@@ -131,8 +131,10 @@ ul {
     height: 1.2em;
 }
 
+/* greeting */
 .portfolio-tag {
     font-size: 1em;
+    /* text-align: center; */
     text-align: end;
     font-weight: 300;
     margin: 0px;

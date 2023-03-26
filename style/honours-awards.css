@@ -91,3 +91,15 @@ button.popup-close {
 .popup-header>span{
     font-weight: 600;
 }
+
+
+@media (max-width: 768px) {
+
+    .thumbnail>span {
+        display: none !important;
+    }
+    
+    .popup-thumbnail {
+        display: none !important;
+    }
+}

@@ -246,7 +246,7 @@ main h2.wsite-content-title {
     }
 
     main .banner-wrap::before {
-        min-height: 30px;
+        min-height: 100px;
         border-radius: 10px;
     }
 
@@ -259,7 +259,7 @@ main h2.wsite-content-title {
     }
 
     main .wsite-section-content {
-        height: 30px;
+        height: 100px;
     }
 
     .beyond-tech-images {

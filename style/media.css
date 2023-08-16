@@ -234,6 +234,10 @@ main h2.wsite-content-title {
     position: relative;
 }
 
+.media-image-description{
+    text-align: center;
+}
+
 @media (max-width: 768px) {
 
     .main-banner {

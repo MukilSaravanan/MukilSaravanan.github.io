@@ -36,6 +36,15 @@
     width: 47%;
 }
 
+.media-image {
+    width: 47%;
+}
+
+.media-image-container .media-image {
+    width: 100%;
+}
+
+
 .media-image>img {
     width: 100%;
 }

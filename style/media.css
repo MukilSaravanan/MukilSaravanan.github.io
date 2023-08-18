@@ -32,9 +32,18 @@
     flex-wrap: wrap;
 }
 
+.media-image-container {
+    width: 47%;
+}
+
 .media-image {
     width: 47%;
 }
+
+.media-image-container .media-image {
+    width: 100%;
+}
+
 
 .media-image>img {
     width: 100%;
@@ -232,6 +241,10 @@ main h2.wsite-content-title {
     font-weight: 900;
     font-style: italic;
     position: relative;
+}
+
+.media-image-description{
+    text-align: center;
 }
 
 @media (max-width: 768px) {

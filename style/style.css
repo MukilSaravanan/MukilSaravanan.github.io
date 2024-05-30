@@ -844,7 +844,8 @@ main .wsite-section-content {
 }
 
 main .wsite-section-content.photography {
-    background-image: url(../assets/beyond-tech/photography/Mukil\ photographing\ \(2\).png);
+    /* background-image: url(../assets/beyond-tech/photography/Mukil\ photographing\ \(2\).png); */
+    background-image: url(../assets/beyond-tech/photography/Mukil\ photographing\ 3.JPG);
     /* background-image: url(../assets/front_page/background-image-3.jpg); */
 }
 main .wsite-section-content.beat-boxing {

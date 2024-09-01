@@ -230,6 +230,16 @@ ul {
     object-position: 25% 100%;
 }
 
+ /* .about-me-profile-image {
+    object-fit: cover;
+
+    object-position: 25% 100%; 
+    max-width:4000px;
+    max-height:400px;
+    width: auto;
+    height: auto;
+}  */
+
 .about-me-title-div {
     position: relative;
     margin-bottom: 40px;
@@ -619,7 +629,7 @@ h4.sub-title {
         width: 41%;
         padding: 0 20px 20px 30px;
         text-align: right;
-        *margin-bottom: calc(-100%);
+        margin-bottom: calc(-100%);
     }
 
     .timeline>li .timeline-image {

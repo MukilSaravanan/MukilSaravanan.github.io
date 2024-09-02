@@ -214,12 +214,12 @@ ul {
 }
 
 .about-me-left {
-    width: 50%;
+    width: 30%;
     padding: 20px 15px 20px 20px;
 }
 
 .about-me-right {
-    width: 50%;
+    width: 80%;
     padding: 20px 20px 20px 15px;
 }
 
@@ -310,6 +310,31 @@ ul {
 .skill-tags {
     font-size: 0.9em;
 }
+
+@media (max-width:1200px) {
+
+    .about-me-profile-image {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        aspect-ratio: auto;
+    }
+
+    .about-me-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me-left {
+        width: 100%;
+    }
+
+    .about-me-right {
+        width: 100%;
+    }
+
+}
+
 
 @media (min-width: 320px) and (max-width:500px) {
     body {

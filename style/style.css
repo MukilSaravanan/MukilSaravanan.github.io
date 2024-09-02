@@ -214,12 +214,12 @@ ul {
 }
 
 .about-me-left {
-    width: 50%;
+    width: 30%;
     padding: 20px 15px 20px 20px;
 }
 
 .about-me-right {
-    width: 50%;
+    width: 80%;
     padding: 20px 20px 20px 15px;
 }
 
@@ -227,8 +227,19 @@ ul {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    object-position: 25% 100%;
+    aspect-ratio: 4/3;
+    object-position: 25% 0%;
 }
+
+ /* .about-me-profile-image {
+    object-fit: cover;
+
+    object-position: 25% 100%; 
+    max-width:4000px;
+    max-height:400px;
+    width: auto;
+    height: auto;
+}  */
 
 .about-me-title-div {
     position: relative;
@@ -299,6 +310,31 @@ ul {
 .skill-tags {
     font-size: 0.9em;
 }
+
+@media (max-width:1200px) {
+
+    .about-me-profile-image {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        aspect-ratio: auto;
+    }
+
+    .about-me-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me-left {
+        width: 100%;
+    }
+
+    .about-me-right {
+        width: 100%;
+    }
+
+}
+
 
 @media (min-width: 320px) and (max-width:500px) {
     body {
@@ -619,7 +655,7 @@ h4.sub-title {
         width: 41%;
         padding: 0 20px 20px 30px;
         text-align: right;
-        *margin-bottom: calc(-100%);
+        /* *margin-bottom: calc(-100%); */
     }
 
     .timeline>li .timeline-image {

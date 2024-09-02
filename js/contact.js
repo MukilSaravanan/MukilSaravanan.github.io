@@ -1,8 +1,11 @@
 window.addEventListener("load", () => {
-    let email_copy = document.querySelector(".email-copy>button")
-    email_copy.addEventListener("click", () => {
-        navigator.clipboard.writeText("mukil.saravanan.edu@gmail.com");
-        window.alert("Email is copied to the clipboard")
+    let email_copy = document.querySelectorAll(".email-copy>button")
+    email_copy.forEach((emailElement)=>{
+        emailElement.addEventListener("click", (event) => {
+            const pTag = event.currentTarget.closest(".email-copy").querySelector("p");
+            navigator.clipboard.writeText(pTag.textContent.replace("(at)","@"));
+            window.alert("Email is copied to the clipboard");
+        })
     })
     NavMenuClick();
     function NavMenuClick(){

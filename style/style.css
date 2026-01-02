@@ -929,3 +929,20 @@ main h2.wsite-content-title {
         height: 100px;
     }
 }
+
+/* Highlight link used on project pages */
+.highlight-link {
+    color: #0b66ff;
+    background: linear-gradient(90deg, rgba(11,102,255,0.12), rgba(11,102,255,0));
+    padding: 0.08em 0.28em;
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 0 1px 0 rgba(11,102,255,0.12);
+    transition: box-shadow 150ms ease, transform 120ms ease;
+}
+.highlight-link:hover,
+.highlight-link:focus {
+    box-shadow: 0 6px 18px rgba(11,102,255,0.16);
+    transform: translateY(-2px);
+    outline: none;
+}
